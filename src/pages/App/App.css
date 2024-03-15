@@ -1,0 +1,20 @@
+.ant-layout {
+    min-height: 1024px;
+}
+
+.mt-3 {
+    margin-top: 8px !important;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.my-3 {
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
+}
+
+.mr-4 {
+    margin-right: 20px;
+}
