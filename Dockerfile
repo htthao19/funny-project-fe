@@ -11,20 +11,6 @@ RUN npm install
 RUN npm run build
 
 #-----------------------------------------------
-# # Runner stage.
-# FROM node:20-alpine
-
-# ENV NODE_ENV=production
-
-# COPY --from=builder /app/package.json ./
-# COPY --from=builder /app/node_modules ./node_modules
-# COPY --from=builder /app/public ./public
-# COPY --from=builder /app/build ./build
-
-# EXPOSE 3000
-
-# CMD ["npm", "start"]
-
 # Use NGINX as the web server
 FROM nginx:alpine
 
