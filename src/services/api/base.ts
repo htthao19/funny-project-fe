@@ -71,7 +71,7 @@ AxiosWithCredentials.interceptors.response.use(
 		const token = Cookies.get(
 			process.env.REACT_APP_SESSION_COOKIE_NAME!
 		); 
-        if (!token) {
+        if (!token || error.response?.status === 401) {
             redirectToLoginPage();
         }
         return Promise.reject(error);
